@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="EN">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="styles/style.css">
+        <script src="scripts/script.js"></script>
+        <script src="scripts/md5Encrypt.js"></script>
+        <title>Lab 02</title>
+    </head>
+    <body>
+        <header class="header">
+            <h1 class="header__page-title">
+                Login Page
+            </h1>
+        </header>
+        <main>
+            <form class="user-form" name="userForm" id="userForm">
+                <fieldset>
+                    <legend>User Authentication</legend>
+                    <label class="user-form__label" for="username">Username:</label>
+                    <input type="text" id="username" name="username" class="user-form__credentials">
+                    </br>
+                    <label class="user-form__label" for="password">Password:</label>
+                    <input name="password" id="password" type="password" class="user-form__credentials">
+                    </br>
+                    <input type="submit" value="Log in" class="user-form__button_login" id="validateBtn">
+                </fieldset>
+            </form>
+
+            <div class="hidden-area" id="hiddenArea">
+                <p class="hidden-area__credentials" id="validUser">Username:</p>
+                <p id="validPassword" class="hidden-area__credentials">Password:</p>
+            </div>
+        </main>
+    </body>
+</html>
