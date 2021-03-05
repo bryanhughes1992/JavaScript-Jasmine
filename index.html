@@ -6,7 +6,8 @@
         <link rel="stylesheet" type="text/css" href="styles/style.css">
         <script src="scripts/script.js"></script>
         <script src="scripts/md5Encrypt.js"></script>
-        <title>Lab 02</title>
+        <script src="scripts/hmac-md5.js"></script>
+        <title>Assignment 02</title>
     </head>
     <body>
         <header class="header">
@@ -27,10 +28,8 @@
                     <input type="submit" value="Log in" class="user-form__button_login" id="validateBtn">
                 </fieldset>
             </form>
-
             <div class="hidden-area" id="hiddenArea">
-                <p class="hidden-area__credentials" id="validUser">Username:</p>
-                <p id="validPassword" class="hidden-area__credentials">Password:</p>
+                <p id="outMsg"></p>
             </div>
         </main>
     </body>
