@@ -36,7 +36,14 @@ window.addEventListener("load", function() {
             highlightPassword();
         }
     });
-
+    /**
+     * The checkLogin() function passes the 'pass' variable
+     * through the md5Encrypt function and checks it against the
+     * valid password and also the 'user' against the 'validUser' variable
+     * @param {string} user
+     * @param {string} pass
+     * @returns {string, boolean}
+     */
     function checkLogin(user, pass) {
         //Hash the passed in password
         var hashedUserPass = md5Encrypt(pass);
