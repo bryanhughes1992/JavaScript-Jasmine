@@ -21,3 +21,12 @@ describe("testToFailSuite", function() {
     expect(checkLogin()).not.toMatch("Invalid Username or Password");
   });
 });
+
+describe("BoundarySuite", function() {
+  it("If you put in both values with one letter off, should not equal 'true'.", function() {
+    expect(checkLogin("SeanDoyle", "FoiledByDoyle3031")).not.toEqual("true");
+  });
+  it("If you enter the correct password case insensitive, should not equal 'true'.", function() {
+    expect(checkLogin("seandoyle", "foiledbydoyle3031")).not.toEqual('true');
+  });
+});
