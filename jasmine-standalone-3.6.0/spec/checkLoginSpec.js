@@ -14,5 +14,10 @@ describe("testToPassSuite", function() {
 });
 
 describe("testToFailSuite", function() {
-  it("")
+  it("If passed an empty value, should not return 'true'", function() {
+    expect(checkLogin("WrongUser", "WrongPass")).not.toEqual("true");
+  });
+  it("If passed empty values, should not return 'Invalid Username or Password'", function() {
+    expect(checkLogin()).not.toMatch("Invalid Username or Password");
+  });
 });
